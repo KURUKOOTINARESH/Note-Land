@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteLand</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="note-land">
+        <div class="left">
+            <header>
+                <img src="./logo.png" alt="logo">
+                <h2>NOTE LAND</h2>
+            </header>
+            <br>
+            <hr>
+            <br>
+            <button class="new-note-btn" id="clearNotesBtn">
+                CLEAR NOTES
+            </button>
+            <div class="note-lists">
+
+            </div>
+            <button class="new-note-btn" id="newNoteBtn">
+                NEW NOTE
+            </button>
+        </div>
+        <div class="right">
+            <div id="noNotesFound">
+                <img src="./folder.png" alt="empty-folder">
+                <h3>NO NOTES FOUND</h3>
+                <p>ADD SOME NOTES FROM THE LEFT COLUMN</p>
+            </div>
+            <div class="create-note-con">
+                <input type="text" placeholder="NOTE TITLE" id="noteTitle">
+                <textarea name="noteDescription" id="noteDescription" cols="30" rows="8" placeholder="NOTE DESCRIPTION"></textarea>
+                <button class="create-note-btn">CREATE NOTE</button>
+            </div>
+            <div class="note-details">
+                <div class="note-details-top">
+                    <h2 class="note-details-title"></h2>
+                    <div class="note-details-controls-wrapper">
+                        <button class="note-controls new-task-btn">NEW TASK</button>
+                        <button class="note-controls delete-note-btn">DELETE NOTE</button>
+                    </div>
+                </div>
+                <div class="note-details-content-wrapper">
+                    <p class="note-details-content"></p>
+                    <h4>TASKS LIST</h4>
+                    <ul class="tasks">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="new-task-bg">
+                <div class="new-task-con">
+                    <input type="text" class="new-task" placeholder="NEW TASK">
+                    <button class="create-task-btn">CREATE TASK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./main.js"></script>
+</html>
